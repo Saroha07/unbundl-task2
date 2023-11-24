@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>LOVE CHOCOLATE</title>
+    <style>
+        .carousel-inner {
+            height: 800px; /* Set your desired height */
+        }
+        body {
+          font-family: Arial, sans-serif;
+      }
+
+      .chocolate-options {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+      }
+
+      .chocolate-option {
+          border: 1px solid #ddd;
+          padding: 10px;
+          text-align: center;
+          cursor: pointer;
+          user-select: none;
+      }
+
+      .custom-pack {
+          margin-top: 20px;
+      }
+
+      .selected-chocolates {
+          margin-top: 10px;
+      }
+
+      #total-price {
+          font-size: 1.2em;
+          font-weight: bold;
+          margin-top: 10px;
+      }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">LOVE CHOCOLATE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+    <div>
+    <h1 style="text-align: center;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;color:brown">Love Chocolate</h1>
+    
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://imgs.search.brave.com/QF4-PMBbmIQf2MxcKGRTkuDlLkDPdwhFhVkE2O5vx_Y/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93LmZv/cmZ1bi5jb20vZmV0/Y2gvNzgvNzhmMDUy/MzY0MmRjNzNiMWZh/YzA1NjY5MWQ4NmRk/ZDUuanBlZw" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://imgs.search.brave.com/OnSgCvjq24_65KJvuqK5U5Q8W2CS2hrV89LC0gcVfo8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NDg3NDE0ODctMThk/MzYzZGM0NDY5P2l4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRSOGZH/Tm9iMk52YkdGMFpY/TjhaVzU4TUh4OE1I/eDhmREE9Jnc9MTAw/MCZxPTgw" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://imgs.search.brave.com/y6xNv7cvsp5NSA7PMTPkcB3Dj3qcPGg15JsLyoDRLl0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDIwMDAz/MDMuanBn" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br><br><br>
+      <h1 style="text-align:center"><i><b>Chocolate Customizer</b></i></h1>
+
+    <div class="chocolate-options">
+        <div class="chocolate-option" data-name="Milk Chocolate" data-price="2.50">
+            <img src="https://imgs.search.brave.com/jqNQEkOugD52Q0VhwJrBhdJWnqm9AZTehI9VaCVPZU4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYWxsLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMTUvQ2hv/Y29sYXRlLU1pbGst/UE5HLUltYWdlLnBu/Zw" alt="">
+            <b style="font-size:x-large;">Milk Chocolate ($2.50)</b>
+        </div>
+        <div class="chocolate-option" data-name="Dark Chocolate" data-price="3.00">
+            <img src="https://imgs.search.brave.com/lj4W0DcPNqChHquHX7Fp5lhKF7n-AxXGC6-rt2MzRGg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5ncGxheS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzcvRGFy/ay1DaG9jb2xhdGUt/UGllY2UtVHJhbnNw/YXJlbnQtUE5HLnBu/Zw" alt="">
+            <b style="font-size:x-large;">Dark Chocolate ($3.00)</b>
+        </div>
+        <div class="chocolate-option" data-name="White Chocolate" data-price="3.50">
+            <img src="https://imgs.search.brave.com/9-5PMnPwlwGhruaKAhlvzCTxwoX_EgRP0G5nJu3tg4Y/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9mbHlj/bGlwYXJ0LmNvbS90/aHVtYjIvbWlsa3kt/d2F5LWNob2NvbGF0/ZS1wbmctcG5nLWlt/YWdlLTYyNTU1MC5w/bmc" alt="">
+            <b style="font-size:x-large;">White Chocolate ($3.50)</b>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="custom-pack">
+        <h2 style="text-align:center; color:brown"><i> <b>Your Custom Pack</b></i></h2>
+        <div class="selected-chocolates" id="selected-chocolates"></div>
+        <div style="text-align:center; color:rgb(6, 79, 29);font-size:x-large">Total Price: $<span id="total-price">0.00</span></div>
+    </div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const chocolateOptions = document.querySelectorAll('.chocolate-option');
+    const selectedChocolatesContainer = document.getElementById('selected-chocolates');
+    const totalPriceElement = document.getElementById('total-price');
+    let selectedChocolates = [];
+
+    chocolateOptions.forEach(option => {
+        option.addEventListener('click', () => toggleChocolate(option));
+    });
+
+    function toggleChocolate(chocolate) {
+        const chocolateName = chocolate.dataset.name;
+        const chocolatePrice = parseFloat(chocolate.dataset.price);
+        const existingChocolateIndex = selectedChocolates.findIndex(choco => choco.name === chocolateName);
+
+        if (existingChocolateIndex !== -1) {
+            if (selectedChocolates.length < 8) {
+                selectedChocolates.push({
+                    name: chocolateName,
+                    price: chocolatePrice,
+                    quantity: 1
+                });
+            } else {
+                // Alert when trying to add more than 8 chocolates
+                alert("Maximum limit reached (8 items)!");
+            }
+        } else {
+            // Add chocolate to the pack
+            selectedChocolates.push({
+                name: chocolateName,
+                price: chocolatePrice,
+                quantity: 1
+            });
+        }
+
+        updateSelectedChocolates();
+        updateTotalPrice();
+    }
+
+    function updateSelectedChocolates() {
+        selectedChocolatesContainer.innerHTML = '<ul>';
+
+        selectedChocolates.forEach(chocolate => {
+            const chocolateItem = document.createElement('li');
+            chocolateItem.textContent = `${chocolate.name} x${chocolate.quantity}`;
+            selectedChocolatesContainer.appendChild(chocolateItem);
+        });
+
+        selectedChocolatesContainer.innerHTML += '</ul>';
+    }
+
+    function updateTotalPrice() {
+        const totalPrice = selectedChocolates.reduce((total, chocolate) => {
+            return total + (chocolate.price * chocolate.quantity);
+        }, 0);
+
+        totalPriceElement.textContent = totalPrice.toFixed(2);
+    }
+});
+</script>
+</body>
+</html>
